@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="drawer_menu">
+        <item id="@+id/timetable">Timetable</item>
+        <item id="@+id/todo">To Do List</item>
+        <item>To Do Later</item>
+        <item id="@+id/mycontacts">My Contacts</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item>Exit</item>
+
+    </string-array>
+    <string-array
+        name ="Start_preference">
+        <item id="@+id/timetable_start">Timetable</item>
+        <item id="@+id/todo_start">To Do list</item>
+        <item id="@+id/contacts_start">Contacts</item>
+        <item id="@+id/last page">Last page</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bea4ec">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_list"
+        android:background="#96dcf2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="#efd4c1"
+        android:layout_below="@+id/editText"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Add"
+        android:id="@+id/add_contact"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"
+        android:background="#bea4ec"
+        android:layout_gravity="left"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Delete"
+        android:id="@+id/delete_contact"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:background="#bea4ec"
+        android:layout_gravity="right"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/add_contact"
+        android:layout_toRightOf="@+id/add_contact"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Update"
+        android:id="@+id/update_contact"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:background="#bea4ec"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/delete_contact"
+        android:layout_toEndOf="@+id/delete_contact"/>
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Update"
+        android:id="@+id/call_button"
+        android:src="@drawable/ic_call_black_24dp"
+        android:background="#bea4ec"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/update_contact"
+        android:layout_toEndOf="@+id/update_contact"/>
+</RelativeLayout>

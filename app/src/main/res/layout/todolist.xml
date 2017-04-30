@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bea4ec">
+
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:background="#f5f2f9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="false"
+        android:hint ="enter task"
+        android:layout_below="@+id/delete_button" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Delete"
+        android:id="@+id/delete_button"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:background="#bea4ec"
+        android:layout_gravity="right"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/button" />
+
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Add"
+        android:id="@+id/button"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"
+        android:background="#bea4ec"
+        android:layout_gravity="left"
+        android:scaleType="fitXY" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:id="@+id/listView2"
+        android:background="#96dcf2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="#efd4c1"
+        android:layout_below="@+id/editText" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Update"
+        android:id="@+id/up_button"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:background="#bea4ec"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/delete_button"
+        android:layout_toEndOf="@+id/delete_button"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="tomm"
+        android:id="@+id/tomm_button"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        android:background="#bea4ec"
+        android:layout_marginLeft="7dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/up_button"
+        android:layout_toEndOf="@+id/up_button" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/refresh"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:background="#bea4ec"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/tomm_button"
+        android:layout_toEndOf="@+id/tomm_button" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/later"
+        android:src="@drawable/ic_fast_forward_black_24dp"
+        android:background="#bea4ec"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/refresh"
+        android:layout_toEndOf="@+id/refresh"
+        />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/movetolater"
+        android:src="@drawable/ic_list_black_24dp"
+        android:background="#bea4ec"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/later"
+        android:layout_toEndOf="@+id/later"
+        />
+</RelativeLayout>
